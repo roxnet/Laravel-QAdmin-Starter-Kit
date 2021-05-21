@@ -34,6 +34,26 @@
     />
     @endcan
 
+    {{-- <x-nav-link-sub
+        text="Referensi"
+        icon="th-list"
+        active="active"
+        :submenu="[
+            [
+                'subactive'=>'',
+                'suburl'=>route('admin.provinsi'),
+                'subicon'=>'th-list',
+                'subtext'=>'Provinsi'
+            ],
+            [
+                'subactive'=>'',
+                'suburl'=>route('admin.provinsi'),
+                'subicon'=>'th-list',
+                'subtext'=>'Kabupaten'
+            ],
+        ]"
+    /> --}}
+
     <hr class="sidebar-divider mb-0">
     
     @can('setting-list')

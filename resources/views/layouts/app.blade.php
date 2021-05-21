@@ -67,5 +67,6 @@
         <script src="{{ asset('dist/js/ruang-admin.min.js') }}"></script>
         <script src="{{ asset('dist/vendor/chart.js/Chart.min.js') }}"></script>
         {{ ($script) ?? '' }}
+        @stack('scripts')
     </body>
 </html>
