@@ -4,7 +4,7 @@
         <i class="fas fa-fw fa-{{ $icon }}"></i>
         <span>{{ $text }}</span>
     </a>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <div class="collapse navbar-collapse {{ strtolower($text) }}"" id="collapsibleNavbar">
         <ul class="navbar-nav">
             @foreach($submenu as $key => $value)
             <li class="nav-item{{ $value['subactive'] }}">
@@ -22,7 +22,7 @@
     $(function(){
         if(
         $( "#collapsibleNavbar > ul > li.nav-item" ).hasClass( "active" )==true){
-            $('#collapsibleNavbar').addClass('in show');
+            $('.{{ strtolower($text) }}').addClass('in show');
         };
     });
 </script>

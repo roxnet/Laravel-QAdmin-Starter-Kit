@@ -12,6 +12,7 @@
         <link href="{{ asset('dist/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
         <link href="{{ asset('dist/css/ruang-admin.min.css') }}" rel="stylesheet">
         {{ ($head) ?? '' }}
+        @livewireStyles
     </head>
 
     <body id="page-top">
@@ -48,7 +49,7 @@
                     <div class="container my-auto">
                         <div class="copyright text-center my-auto">
                         <span>copyright &copy; <script> document.write(new Date().getFullYear()); </script> - developed by
-                            <b><a href="https://github.com/superXdev" target="_blank">superXdev</a></b>
+                            <b><a href="https://github.com/roxnet" target="_blank">Risman</a></b>
                         </span>
                         </div>
                     </div>
@@ -68,5 +69,6 @@
         <script src="{{ asset('dist/vendor/chart.js/Chart.min.js') }}"></script>
         {{ ($script) ?? '' }}
         @stack('scripts')
+        @livewireScripts
     </body>
 </html>
